@@ -36,6 +36,7 @@ main {
     border-radius: 10px;
     font-size: 3rem;
     padding: 1.3rem;
+    transition: height 0.2s ease-in-out;
 }
 span {
         text-align: right;
@@ -58,7 +59,7 @@ span {
     background: #372948;
     color: #fff;
     font-weight: 600;
-    transition: box-shadow 0.1s ease-in-out, border-color 0.1s ease-in-out, background-color 0s ease-in-out;
+    transition: box-shadow 0.1s ease-in-out, border-color 0.1s ease-in-out, background-color 0s ease-in-out, width 0.2s ease-in-out, height 0.2s ease-in-out;
 }
 .keys:hover {
     background-color: #FFCACA;
@@ -82,4 +83,13 @@ main:hover {
 }
 .equal:hover + .display { 
     background-color: yellow; 
+}
+@media (max-width:566px) {
+    .keys{
+        width: 70px;
+        height: 70px;
+    }
+    .display {
+        height: 70px;
+    }
 }
